@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from 'next/link';
 import { MapPin, Phone, Clock, Calendar } from "lucide-react";
 
 export default function ClinicInfo() {
@@ -128,9 +129,11 @@ export default function ClinicInfo() {
 
             {/* CTA Button */}
             <div className="pt-2">
-              <button className="w-full bg-gradient-to-r from-green-500 to-sky-500 hover:from-green-600 hover:to-sky-600 text-white font-semibold py-4 px-8 rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95">
-                Schedule an Appointment
-              </button>
+              <Link href="/appointments">
+  <button className="w-full bg-gradient-to-r cursor-pointer from-green-500 to-sky-500 hover:from-green-600 hover:to-sky-600 text-white font-semibold py-4 px-8 rounded-xl shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:scale-95">
+    Schedule an Appointment
+  </button>
+</Link>
             </div>
           </div>
         </div>

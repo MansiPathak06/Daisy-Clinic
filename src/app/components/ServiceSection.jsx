@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useEffect, useRef } from 'react';
 
 const services = [
@@ -145,10 +146,12 @@ export default function ServiceSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-fade-in-up">
           <p className="text-gray-600 mb-6 text-lg">Can&apos;t find what you&apos;re looking for?</p>
-          <button className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden">
-            <span className="relative z-10">Contact Us for More Services</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </button>
+        <Link href="/services" passHref>
+  <button className="group relative cursor-pointer px-8 py-4 rounded-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden">
+    <span className="relative z-10">Contact Us for More Services</span>
+    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+  </button>
+</Link>
         </div>
       </div>
 

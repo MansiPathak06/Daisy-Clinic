@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Mail, Phone, MapPin, Clock, Facebook, Instagram, Linkedin, Heart } from 'lucide-react';
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 md:px-20 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* About Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
@@ -37,59 +38,34 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
+                <Link href="/" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-2 h-0.5 bg-green-400 transition-all duration-300"></span>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
+                <Link href="/aboutus" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-2 h-0.5 bg-green-400 transition-all duration-300"></span>
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
+                <Link href="/services" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-2 h-0.5 bg-green-400 transition-all duration-300"></span>
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
+                <Link href="/contact" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-2 h-0.5 bg-green-400 transition-all duration-300"></span>
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#appointments" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
+                <Link href="/appointments" className="text-gray-400 hover:text-green-400 transition-colors duration-300 flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-2 h-0.5 bg-green-400 transition-all duration-300"></span>
                   Book Appointment
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white mb-6">Our Services</h3>
-            <ul className="space-y-3">
-              <li className="text-gray-400 hover:text-sky-400 transition-colors duration-300 cursor-pointer">
-                Renal Diseases
-              </li>
-              <li className="text-gray-400 hover:text-sky-400 transition-colors duration-300 cursor-pointer">
-                Skin Diseases
-              </li>
-              <li className="text-gray-400 hover:text-sky-400 transition-colors duration-300 cursor-pointer">
-                Child Disorders
-              </li>
-              <li className="text-gray-400 hover:text-sky-400 transition-colors duration-300 cursor-pointer">
-                Female Disorders
-              </li>
-              <li className="text-gray-400 hover:text-sky-400 transition-colors duration-300 cursor-pointer">
-                Mental Health
-              </li>
-              <li className="text-gray-400 hover:text-sky-400 transition-colors duration-300 cursor-pointer">
-                Life Style Orders
+                </Link>
               </li>
             </ul>
           </div>
@@ -122,8 +98,8 @@ export default function Footer() {
                 <div className="bg-gray-700 p-2 rounded-lg group-hover:bg-green-500 transition-colors duration-300 flex-shrink-0">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
-                <a href="mailto:info@drdaisyhealingtouch.com" className="text-gray-400 hover:text-green-400 transition-colors duration-300 break-all">
-                  info@drdaisyhealingtouch.com
+                <a href="mailto:daisychaudhary07@gmail.com" className="text-gray-400 hover:text-green-400 transition-colors duration-300 break-all">
+                  daisychaudhary07@gmail.com
                 </a>
               </div>
 
@@ -162,11 +138,6 @@ export default function Footer() {
                 Medical Disclaimer
               </a>
             </div>
-          </div>
-          <div className="text-center mt-4">
-            <p className="text-gray-500 text-xs">
-              Made with <Heart className="w-3 h-3 inline text-red-500" fill="currentColor" /> for better healthcare
-            </p>
           </div>
         </div>
       </div>
