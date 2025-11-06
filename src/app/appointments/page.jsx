@@ -1,10 +1,11 @@
 // app/appointments/page.jsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function AppointmentsPage() {
+// Separate component that uses useSearchParams
+function AppointmentForm() {
   const searchParams = useSearchParams();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -83,8 +84,6 @@ export default function AppointmentsPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Appointment Confirmed! 🎉</h1>
           <p className="text-lg text-gray-600 mb-6">
             Your appointment request has been successfully submitted!
-            <br />
-            
           </p>
           
           <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-6 mb-8 border border-cyan-200">
@@ -196,7 +195,7 @@ export default function AppointmentsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <form 
-              action="https://formsubmit.co/daisychaudhary07@gmail.com" 
+              action="https://formsubmit.co/pathakmansi608@gmail.com" 
               method="POST"
               className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-cyan-100"
             >
@@ -689,5 +688,18 @@ export default function AppointmentsPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+// Main component that wraps AppointmentForm in Suspense
+export default function AppointmentsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-500"></div>
+      </div>
+    }>
+      <AppointmentForm />
+    </Suspense>
   );
 }
