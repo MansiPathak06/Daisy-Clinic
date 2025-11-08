@@ -12,7 +12,7 @@ export default function AboutPage() {
               width={400}
               height={600}
               alt="Dr Daisy Brand Card"
-              className="rounded-3xl shadow-2xl border-4 border-emerald-200 transition-transform duration-700 hover:scale-105"
+              className="rounded-3xl w-[500px] h-[300px] shadow-2xl border-4 border-emerald-200 transition-transform duration-700 hover:scale-105"
             />
           </div>
           <div className="text-center md:text-left">
@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
           <div className="flex-shrink-0">
             <Image
-              src="/WhatsApp-Image-2025-11-05-at-19.08.54_46f6cbd4.jpg"
+              src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762622218/doctor_jee8n1.jpg"
               width={300}
               height={400}
               alt="Dr Daisy Profile"
@@ -52,6 +52,9 @@ export default function AboutPage() {
                   <span className="text-emerald-600">●</span> CCH (Pune)
                 </li>
                 <li className="flex items-center gap-2">
+                  <span className="text-emerald-600">●</span> 8 years Experience
+                </li>
+                <li className="flex items-center gap-2">
                   <span className="text-emerald-600">●</span> Registration No: H039934
                 </li>
                 <li className="flex items-center gap-2">
@@ -62,7 +65,7 @@ export default function AboutPage() {
             <div className="mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Specialties</h3>
               <div className="flex flex-wrap gap-3">
-                {['Renal Disease', 'Skin Disease', 'Child Disorders', 'Female Disorders', 'Mental Health', 'Lifestyle Disorders'].map((specialty) => (
+                {['Renal Disease', 'Skin and Hair Disease', 'Child Disorders', 'Female Disorders', 'Mental Health', 'Lifestyle Disorders'].map((specialty) => (
                   <span key={specialty} className="bg-gradient-to-r from-emerald-100 to-sky-100 px-4 py-2 rounded-full text-sm font-semibold text-gray-800 shadow-sm hover:shadow-md transition-shadow">
                     {specialty}
                   </span>
@@ -122,11 +125,11 @@ export default function AboutPage() {
       <div className="bg-gradient-to-br from-emerald-50 to-sky-50 p-8 rounded-2xl shadow-lg animate-slide-in-left hover:shadow-2xl transition-shadow duration-300">
         <div className="flex items-start gap-6">
           <Image
-            src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762446938/sthethoscope_uknyi3.jpg"
+            src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762622558/banner_z8gfcn.jpg"
             width={200}
-            height={140}
+            height={160}
             alt="Clinic Stethoscope"
-            className="rounded-xl shadow-md transition-transform duration-700 hover:scale-105"
+            className="rounded-xl h-[350px] shadow-md transition-transform duration-700 hover:scale-105"
           />
           <div className="flex-1">
             <h4 className="text-2xl font-bold text-emerald-700 mb-3">Clinic Address</h4>
@@ -141,7 +144,7 @@ export default function AboutPage() {
       <div className="bg-gradient-to-br from-sky-50 to-emerald-50 p-8 rounded-2xl shadow-lg animate-fade-in hover:shadow-2xl transition-shadow duration-300">
         <div className="flex items-start gap-6">
           <Image
-            src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762446944/clinic-doctor_svsaze.jpg"
+            src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762622739/clinic_mges5q.jpg"
             width={200}
             height={160}
             alt="Clinic doctor"

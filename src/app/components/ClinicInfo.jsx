@@ -30,11 +30,11 @@ export default function ClinicInfo() {
             <div className="relative overflow-hidden rounded-5xl  bg-transparent p-2 transform transition-all duration-500  hover:-translate-y-2 w-full h-full">
               <div className="overflow-hidden rounded-2xl h-full flex items-center">
                 <Image
-                  src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762364429/b109f572-f09d-471f-ae3c-47da576b3067.png" // Local file or Cloudinary link for the PNG with transparent background
+                  src="https://res.cloudinary.com/dhwxbtiwt/image/upload/v1762622558/banner_z8gfcn.jpg" // Local file or Cloudinary link for the PNG with transparent background
                   alt="Clinic"
-                  width={800}
-                  height={600}
-                  className="w-full h-auto object-contain transform transition-transform duration-700 hover:scale-105"
+                  width={500}
+                  height={500}
+                  className="w-[560px] h-[700px] object-contain transform transition-transform duration-700  hover:scale-105"
                 />
               </div>
             </div>
