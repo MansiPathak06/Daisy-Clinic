@@ -54,7 +54,7 @@ function AppointmentForm() {
 
   const services = [
     'General Consultation',
-    'Skin Diseases Treatment',
+    'Skin and Hair Diseases Treatment',
     'Women Health Treatment',
     'Child Health Treatment',
     'Mental Health Treatment',

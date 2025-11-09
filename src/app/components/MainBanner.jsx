@@ -117,7 +117,7 @@ export default function MainBanner() {
       {/* Stats Bar just below MainBanner */}
       <div className="w-full bg-white/90 py-6 flex flex-wrap justify-around items-center shadow-lg mt-0">
         <div className="text-center px-6">
-          <div className="text-3xl font-bold text-sky-700">15K+</div>
+          <div className="text-3xl font-bold text-sky-700">3K+</div>
           <div className="text-lg text-gray-600 mt-1">Happy patients</div>
         </div>
         <div className="text-center px-6">

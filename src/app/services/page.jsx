@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const services = [
   // Skin & Dermatology
-  { title: 'Skin Diseases Treatment', category: 'Skin & Dermatology', description: 'Comprehensive treatment for various skin conditions using homeopathic remedies', icon: '🩺' },
+  { title: 'Skin and Hair Diseases Treatment', category: 'Skin & Dermatology', description: 'Comprehensive treatment for various skin conditions using homeopathic remedies', icon: '🩺' },
   { title: 'Psoriasis Treatment (Specialist)', category: 'Skin & Dermatology', description: 'Specialized care for chronic psoriasis with natural healing approach', icon: '💉' },
   { title: 'Eczema Treatment', category: 'Skin & Dermatology', description: 'Effective homeopathic solutions for eczema and skin inflammation', icon: '🧴' },
   { title: 'Vitiligo (White Spot) Treatment', category: 'Skin & Dermatology', description: 'Natural treatment for vitiligo and pigmentation disorders', icon: '🎨' },
@@ -72,7 +72,7 @@ const services = [
 
   // Other Specialized Treatments
   { title: 'Homeopathy Doctor in Moradabad', category: 'General', description: 'Experienced homeopathic consultation and treatment', icon: '⚕️' },
-  { title: 'Medicines for Skin Diseases, Kidney Disease, Piles, Fistula, Haemorroids', category: 'General', description: 'Specialized homeopathic medicines for various conditions', icon: '💊' },
+  { title: 'Medicines for Skin and Hair Diseases, Kidney Disease, Piles, Fistula, Haemorroids', category: 'General', description: 'Specialized homeopathic medicines for various conditions', icon: '💊' },
 ];
 
 const categories = [

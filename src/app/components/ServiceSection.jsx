@@ -3,15 +3,15 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from 'react';
 
 const services = [
-    "Renal Disease", "Skin Disease", "Child Disorders", "Female Disorders", "Mental Health", "Life Style Orders",
-//   "Kidney Diseases Treatment", "Skin Diseases Treatment", "Arthritis Pain Management", "Women Health Treatment", 
+    "Renal Disease", "Skin and Hair Disease", "Child Disorders", "Female Disorders", "Mental Health", "Life Style Orders",
+//   "Kidney Diseases Treatment", "Skin and Hair Diseases Treatment", "Arthritis Pain Management", "Women Health Treatment", 
 //   "Mental Health Treatment", "Respiratory Diseases Treatment", "Gastric Problems Treatment", "Child Health Problem Treatment",
 //   "Homeopathy Doctor in Moradabad", "Autism in Child", "Speech Problems in Children Treatment", "Growth Problems in Childrens Treatment",
 //   "Pigmentation solutions", "Skin tightening", "Psoriasis Treatment(Specialist)", "Eczema Treatment", "Vitiligo(White Spot) Treatment",
 //   "Acne,Pimple Treatment", "Ringworm,Scabies Treatment", "Diabetes Treatment", "Thyroid(Graves Diseases) Treatment", "Kidney Stones Treatment",
 //   "Kidney Failure Treatment", "Urinary Tract Infections", "Cystitis Treatment", "Bronchitis Treatment", "Asthma Treatment", 
 //   "Sinusitis Treatment", "Tuberculosis(TB) Treatment", "Nasal Polyps Treatment", "Fissure,Fistula Treatment", "Hemorrhoids Treatment",
-//   "Female infertility treatment", "Male infertility treatment", "Sexual Disorders Treatment(Male & Female)", "Medicines for Skin Diseases,kidney Disease,piles,fistula,haemmoroids",
+//   "Female infertility treatment", "Male infertility treatment", "Sexual Disorders Treatment(Male & Female)", "Medicines for Skin and Hair Diseases,kidney Disease,piles,fistula,haemmoroids",
 //   "Prostate Cancer Treatment", "Anxiety,Tension,Depression Treatment (Non-Habit Forming)", "OCD Treatment", "Phobia Treatment",
 //   "Epilepsy Treatment in Moradabad", "Insomnia Treatment", "Migraine Treatment", "PCOD Treatment", "Uterus Fibroids", "Ovarian Cyst",
 //   "Menstrual Irregularity Treatment", "Leukorrhea Treatment"
